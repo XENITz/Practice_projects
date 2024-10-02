@@ -10,10 +10,12 @@ def move_backwards():
     
 def turn_left():    
     tim.left(25)
-    
+    #commmen\
+        
 def turn_right():
     tim.right(25)
-    
+    dasd
+    hi = "Fsdfsd"
 def clear():
     tim.clear()
     tim.penup()
