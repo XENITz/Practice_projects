@@ -6,10 +6,11 @@ Screen.bgcolor("black")
 Screen.title("Snake Game")
 Screen.tracer(0)
 
+starting_positions = [(0, 0), (-20, 0), (-40, 0)]
 snakes_list = []
 
 ##CREATE SNAKE
-for turtles in range(0, 3):
+for turtles in starting_positions:
     snake = Turtle(shape="square")
     snake.color("white")
     snake.penup()
@@ -28,7 +29,7 @@ while game_is_on:
         y = snakes_list[snake_number].ycor()
         snake = snakes_list[snake_number]
         snake.goto(x, y)
-        snake.forward(20)
+    snake.forward(20)
 
         
         
